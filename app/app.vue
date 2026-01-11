@@ -1,6 +1,12 @@
+<script setup lang="ts">
+import AppHeader from '../components/AppHeader.vue'
+
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <AppHeader />
+
+  </NuxtLayout>
 </template>
+
