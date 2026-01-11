@@ -1,13 +1,26 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="layout-wrapper">
     <AppHeader />
 
-    <main class="flex-grow">
+    <main class="main-content">
       <slot />
     </main>
 
-    <footer class="bg-blue-900 text-white p-8 text-center mt-auto">
-      &copy; 2026 Công ty TNHH Hoàng Linh
-    </footer>
+    <AppFooter />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; 
+}
+</style>

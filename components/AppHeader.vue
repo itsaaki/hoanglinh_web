@@ -58,4 +58,5 @@ const navItems: NavItem[] = [
   </header>
 </template>
 
-<style lang="scss" scoped src="../assets/scss/components/_header.scss"></style>
+<style lang="scss" scoped src="./assets/scss/components/_header.scss"></style>
+
