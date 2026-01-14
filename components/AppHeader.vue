@@ -17,6 +17,8 @@ const navItems: NavItem[] = [
 
 </script>
 
+<style lang="scss" scoped src="./assets/scss/components/_header.scss"></style>
+
 <template>
   <header class="navbar">
     <UContainer>
@@ -58,5 +60,4 @@ const navItems: NavItem[] = [
   </header>
 </template>
 
-<style lang="scss" scoped src="./assets/scss/components/_header.scss"></style>
 
