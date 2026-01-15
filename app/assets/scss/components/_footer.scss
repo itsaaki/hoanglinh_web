@@ -1,0 +1,110 @@
+
+.footer-wrapper {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb; // gray-200
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 0.875rem; // text-sm
+  color: #374151; // gray-700
+
+  h3, .footer-title {
+    color: #1e3a8a; // blue-900
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  // Style cho các đường link menu
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    a {
+      color: #1e3a8a;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      width: fit-content;
+      position: relative;
+
+      &:hover {
+        color: #2563eb; // blue-600
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+
+    .social-btn {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); // Hiệu ứng nảy
+
+      &:hover {
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+
+      &.fb { background-color: #1877f2; }
+      &.yt { background-color: #ff0000; }
+      &.tt { background-color: #000000; }
+      &.zl { background-color: #0068ff; }
+    }
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .info-item {
+      span {
+        display: block;
+        color: #1e3a8a;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+      }
+      
+      a:hover {
+        color: #2563eb;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .legal-info {
+    text-align: left;
+    
+    @media (min-width: 768px) {
+      text-align: right;
+      align-items: flex-end;
+    }
+
+    .logo-img {
+      height: 4rem;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 1rem;
+      
+      @media (min-width: 768px) {
+        margin-left: auto;
+      }
+    }
+
+    p {
+      font-size: 0.75rem;
+      color: #6b7280; // gray-500
+      line-height: 1.4;
+    }
+  }
+}
