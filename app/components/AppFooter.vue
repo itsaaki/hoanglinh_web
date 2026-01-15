@@ -20,7 +20,7 @@ const socialLinks = [
 <template>
   <footer class="footer-wrapper">
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
         
         <div>
           <nav class="footer-nav">
@@ -74,7 +74,7 @@ const socialLinks = [
         </div>
 
         <div class="legal-info flex flex-col">
-          <img src="/images/Asset 74@2x 1.png" alt="Hoàng Linh Logo" class="logo-img" />
+          <img src="/assets/images/logo.png" alt="Hoàng Linh Logo" class="logo-img" />
 
           <div class="space-y-1">
             <p>Mã số doanh nghiệp: 3600224423</p>
