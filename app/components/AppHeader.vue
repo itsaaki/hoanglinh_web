@@ -7,7 +7,7 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { id: 1, label: 'Trang chủ', url: '#home' },
+  { id: 1, label: 'Trang chủ', url: '/home' },
   { id: 2, label: 'Giới thiệu', url: '#about' },
   { id: 3, label: 'Sản phẩm', url: '#products' },
   { id: 4, label: 'Tin tức', url: '#news' },

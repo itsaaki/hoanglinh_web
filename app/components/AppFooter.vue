@@ -22,7 +22,7 @@ const socialLinks = [
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
         
-        <div>
+        <div class="footer-col-left">
           <nav class="footer-nav">
             <NuxtLink 
               v-for="link in footerLinks" 
@@ -73,10 +73,10 @@ const socialLinks = [
           </div>
         </div>
 
-        <div class="legal-info flex flex-col">
+        <div class="legal-info">
           <img src="/assets/images/logo.png" alt="Hoàng Linh Logo" class="logo-img" />
 
-          <div class="space-y-1">
+          <div class="biz-infospace-y-1">
             <p>Mã số doanh nghiệp: 3600224423</p>
             <p>Cấp lần đầu: XX/XX/XXXX</p>
             <p>Nơi cấp: Sở Tài Chính Tỉnh XX</p>
