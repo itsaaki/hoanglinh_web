@@ -12,12 +12,8 @@ useHead({
 
 <template>
   <div class="home-page">
-    <HomeHeroSection />
-
-    <HomeAboutSection />
-
+    <HomeHeroSection />     <HomeAboutSection />
     <HomeProductSection />
-
     <HomeNewsSection />
   </div>
 </template>
