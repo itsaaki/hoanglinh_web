@@ -16,7 +16,7 @@ services:
 
     volumes:
       - mariadb_data:/var/lib/mysql
-      - ./init:/docker-entrypoint-initdb.d
+      - ./database/init:/docker-entrypoint-initdb.d
 
   adminer:
     image: adminer
