@@ -8,7 +8,7 @@ const products = [
 </script>
 
 <template>
-  <section class="product-section">
+  <section id="products" class="product-section">
     <div class="container">
       <div class="section-header">
         <h2>Các sản phẩm chủ lực</h2>

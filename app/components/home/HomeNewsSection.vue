@@ -7,7 +7,7 @@ const news = [
 </script>
 
 <template>
-  <section class="news-section">
+  <section id="news" class="news-section">
     <div class="container">
       <h2 class="section-title">Tin tức nổi bật</h2>
       

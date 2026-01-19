@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero__bg">
       <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?q=80&w=2000" alt="Background" />
       <div class="hero__overlay"></div>
