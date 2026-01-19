@@ -1,3 +1,4 @@
+name: hoanglinh_project
 services:
   mariadb:
     image: mariadb:${MARIADB_VERSION}
