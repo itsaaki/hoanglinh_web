@@ -29,29 +29,11 @@ CREATE TABLE IF NOT EXISTS `news`.`news_category` (
     `category_name` VARCHAR(50) NOT NULL
 ) ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXISTS `accounts` (
-    `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `username` VARCHAR(16) NOT NULL UNIQUE,
-    `password_hash` VARCHAR(255) NOT NULL,
-    `full_name` VARCHAR(25) NOT NULL,
-    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB;
-
-CREATE TABLE IF NOT EXISTS `accounts` (
-    `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `username` VARCHAR(16) NOT NULL UNIQUE,
-    `password_hash` VARCHAR(255) NOT NULL,
-    `full_name` VARCHAR(25) NOT NULL,
-    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB;
-
 CREATE TABLE IF NOT EXISTS `auth`.`accounts` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `username` VARCHAR(16) NOT NULL UNIQUE,
     `password_hash` VARCHAR(255) NOT NULL,
-    `full_name` VARCHAR(25) NOT NULL,
+    `full_name` VARCHAR(50) NOT NULL,
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
@@ -77,8 +59,6 @@ SELECT
   n.thumbnail_url
 FROM `news`.`news` n
 JOIN `auth`.`accounts` a ON n.author_id = a.id;
-
-CREATE INDEX idx_news_author ON `news`.`news`(author_id);
 
 CREATE TABLE IF NOT EXISTS `cms`.`about_us_base` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
@@ -144,8 +124,22 @@ CREATE TABLE IF NOT EXISTS `contact`.`contact_submissions` (
     `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
+CREATE INDEX idx_contact_submissions 
+ON `contact`.`contact_submissions`(`status`);
+
 CREATE INDEX idx_about_us_image_sections_id
 ON `cms`.`about_us_image`(sections_id);
 
 CREATE INDEX idx_news_categories_id
 ON `news`.`news`(category_id);
+
+CREATE INDEX idx_news_publish_date 
+ON `news`.`news`(publish_date);
+
+CREATE INDEX idx_contact_date 
+ON `contact`.`contact_submissions`(created_at);
+
+CREATE UNIQUE  INDEX idx_product_slug 
+ON `catalog`.`product`(slug);
+
+CREATE INDEX idx_news_author ON `news`.`news`(author_id);
