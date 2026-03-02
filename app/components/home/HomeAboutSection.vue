@@ -12,7 +12,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.</p>
             <p>Với hệ thống kho bãi hiện đại, chúng tôi cam kết chất lượng tốt nhất.</p>
           </div>
-          <NuxtLink to="/gioi-thieu" class="btn-main">Sản phẩm</NuxtLink>
+          <NuxtLink to="/about" class="btn-main">Sản phẩm</NuxtLink>
         </div>
       </div>
     </div>

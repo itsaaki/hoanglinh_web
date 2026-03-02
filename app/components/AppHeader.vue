@@ -7,13 +7,12 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { id: 1, label: 'Trang chủ', url: '#home' },
-  { id: 2, label: 'Giới thiệu', url: '#about' },
-  { id: 3, label: 'Sản phẩm', url: '#products' },
-  { id: 4, label: 'Tin tức', url: '#news' },
-  { id: 5, label: 'Liên hệ', url: '#contact' }
+  { id: 1, label: 'Trang chủ', url: '/home' },
+  { id: 2, label: 'Giới thiệu', url: '/about' },
+  { id: 3, label: 'Sản phẩm', url: '/products' },
+  { id: 4, label: 'Tin tức', url: '/news' },
+  { id: 5, label: 'Liên hệ', url: '/contact' }
 ]
-
 
 </script>
 
@@ -23,7 +22,7 @@ const navItems: NavItem[] = [
     <UContainer>
       <div class="navbar__inner">
         
-        <NuxtLink to="/" class="navbar__logo">
+        <NuxtLink to="/home" class="navbar__logo">
           <img 
             src="/assets/images/logo.png" 
             alt="Hoàng Linh Logo" 

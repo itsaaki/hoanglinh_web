@@ -24,7 +24,7 @@ const news = [
       </div>
 
       <div class="center-btn">
-        <NuxtLink to="/tin-tuc" class="btn-primary">Xem thêm</NuxtLink>
+        <NuxtLink to="/news" class="btn-primary">Xem thêm</NuxtLink>
       </div>
     </div>
   </section>
