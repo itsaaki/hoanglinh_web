@@ -21,8 +21,8 @@
         </p>
 
         <div class="hero__actions">
-          <NuxtLink to="/san-pham" class="btn btn--primary">Sản phẩm</NuxtLink>
-          <NuxtLink to="/lien-he" class="btn btn--outline">Liên hệ</NuxtLink>
+          <NuxtLink to="/products" class="btn btn--primary">Sản phẩm</NuxtLink>
+          <NuxtLink to="/contact" class="btn btn--outline">Liên hệ</NuxtLink>
         </div>
       </div>
     </div>

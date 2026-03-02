@@ -26,7 +26,7 @@ const products = [
       </div>
 
       <div class="section-footer">
-        <NuxtLink to="/san-pham" class="btn-outline">Xem thêm</NuxtLink>
+        <NuxtLink to="/products" class="btn-outline">Xem thêm</NuxtLink>
       </div>
     </div>
   </section>
