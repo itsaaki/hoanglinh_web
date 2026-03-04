@@ -96,13 +96,16 @@ const socialLinks = [
   </footer>
 </template>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 <style scoped>
 /* --- CẤU HÌNH CHUNG --- */
 .footer-wrapper {
   background-color: #ffffff;
   padding: 3rem 0;
   border-top: 1px solid #eee;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
 }
 

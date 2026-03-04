@@ -1,9 +1,15 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
+  // ... other configs
   
-  modules: [
-    '@nuxt/content',
-  ],
-  devtools: { enabled: true },
-  compatibilityDate: '2024-04-03',
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // This line automatically imports your variables file into all SCSS files
+          additionalData: '@use "@/assets/scss/variables.scss" as *;'
+        }
+      }
+    }
+  }
 })

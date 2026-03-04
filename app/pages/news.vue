@@ -85,7 +85,7 @@ const newsList = [
 <style scoped>
 /* --- CẤU HÌNH CHUNG --- */
 .news-page {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   padding: 3rem 0 6rem 0;
   background-color: #fff;
