@@ -38,6 +38,7 @@ $color-yellow: #F4B23E;
 $color-white: #fff;
 
 .product-section {
+  font-family: 'Montserrat', sans-serif;
   background-color: $color-blue; /* Nền xanh toàn màn hình */
   padding: 80px 0;
   color: $color-white;
