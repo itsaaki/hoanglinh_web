@@ -51,13 +51,22 @@ const products = [
   </div>
 </template>
 
-<style scoped>
+<style>
+/* THÊM MỚI: Import font Montserrat từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<style lang="scss" scoped>
 /* CẤU HÌNH CHUNG */
 .product-page {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   padding: 4rem 0 6rem 0;
   background-color: #fff;
+  /* THÊM: Làm mượt font cho toàn bộ khối này */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .container {
@@ -76,7 +85,7 @@ const products = [
 }
 
 .main-title {
-  color: #3b5ba9; /* Màu xanh đậm trong ảnh */
+  color: #3b5ba9; 
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -88,16 +97,14 @@ const products = [
   font-size: 1rem;
 }
 
-/* --- 2. PRODUCT GRID (QUAN TRỌNG) --- */
+/* --- 2. PRODUCT GRID --- */
 .product-grid {
   display: grid;
-  /* Chia 4 cột đều nhau */
   grid-template-columns: repeat(4, 1fr); 
-  gap: 3rem; /* Khoảng cách giữa các hình tròn */
+  gap: 3rem; 
   margin-bottom: 5rem;
 }
 
-/* Responsive: Tablet 2 cột, Mobile 1 cột */
 @media (max-width: 992px) {
   .product-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -113,22 +120,27 @@ const products = [
 .circle-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1; /* Đảm bảo luôn vuông để bo thành tròn */
-  border-radius: 50%; /* Biến thành hình tròn */
-  overflow: hidden; /* Cắt ảnh thừa */
+  aspect-ratio: 1 / 1; 
+  border-radius: 50%; 
+  overflow: hidden; 
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: transform 0.3s ease;
+  
+  /* THÊM: Ép trình duyệt dùng phần cứng (GPU) để render mượt hơn khi có hiệu ứng scale */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .circle-frame:hover {
-  transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi di chuột */
+  transform: scale(1.05); 
 }
 
 .circle-frame img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ảnh phủ kín hình tròn */
+  object-fit: cover; 
   transition: transform 0.5s ease;
 }
 
@@ -136,7 +148,6 @@ const products = [
   transform: scale(1.1);
 }
 
-/* Lớp phủ mờ để chữ trắng nổi bật */
 .circle-frame .overlay {
   position: absolute;
   inset: 0;
@@ -145,22 +156,25 @@ const products = [
 }
 
 .circle-frame:hover .overlay {
-  background: rgba(0, 0, 0, 0.1); /* Sáng hơn khi hover */
+  background: rgba(0, 0, 0, 0.1); 
 }
 
 .product-name {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Căn giữa tuyệt đối */
+  /* SỬA: Thêm translateZ(0) hoặc translate3d để text không bị rung/vỡ nét khi thẻ cha scale */
+  transform: translate(-50%, -50%) translateZ(0); 
   color: white;
   font-size: 1.5rem;
   font-weight: 800;
   text-align: center;
   width: 90%;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Bóng chữ */
   margin: 0;
   text-transform: capitalize;
+  
+  /* SỬA: Làm bóng đổ thành 2 lớp mềm mại hơn, giúp chữ nổi bật mà không tạo cảm giác viền gắt */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.3); 
 }
 
 /* --- 3. CTA SECTION --- */
@@ -188,7 +202,7 @@ const products = [
   background-color: #3b5ba9;
   color: white;
   padding: 12px 40px;
-  border-radius: 50px; /* Bo tròn nút dạng viên thuốc */
+  border-radius: 50px; 
   font-weight: 700;
   text-decoration: none;
   transition: background 0.3s;

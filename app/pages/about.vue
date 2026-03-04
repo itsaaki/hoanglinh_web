@@ -97,7 +97,7 @@ useHead({
 }
 
 .about-page {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   padding-bottom: 6rem;
 }
