@@ -24,6 +24,7 @@ $color-blue: #2A4D9B;
 $color-dark-blue: #1e3a8a;
 
 .about-section {
+  font-family: 'Montserrat', sans-serif;
   padding: 80px 0;
   background-color: #fff;
 }
