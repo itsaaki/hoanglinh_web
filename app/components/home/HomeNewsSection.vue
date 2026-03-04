@@ -35,6 +35,7 @@ $color-blue: #2A4D9B;
 $text-color: #333;
 
 .news-section {
+  font-family: 'Montserrat', sans-serif;
   padding: 80px 0;
   background-color: #f9fafb;
 }

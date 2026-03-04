@@ -36,6 +36,7 @@ $color-yellow: #F4B23E;
 $color-white: #ffffff;
 
 .hero {
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   height: 600px;
   display: flex;
