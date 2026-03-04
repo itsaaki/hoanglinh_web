@@ -56,6 +56,7 @@ $color-dark-blue: #1e3a8a;
 
 .about-content {
   .section-title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     color: $color-blue;
     font-weight: 700;
@@ -63,6 +64,7 @@ $color-dark-blue: #1e3a8a;
   }
 
   .text-content {
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #555;
     line-height: 1.6;
