@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const footerLinks = [
-  { label: 'Trang chủ', to: '/home' },
+  { label: 'Trang chủ', to: '/' },
   { label: 'Giới thiệu', to: '/about' },
   { label: 'Sản phẩm', to: '/products' },
   { label: 'Tin tức', to: '/news' },
