@@ -2,8 +2,8 @@
 const footerLinks = [
   { label: 'Trang chủ', to: '/' },
   { label: 'Giới thiệu', to: '/about' },
-  { label: 'Sản phẩm', to: '/products' },
-  { label: 'Tin tức', to: '/news' },
+  { label: 'Sản phẩm', to: '/products/products' },
+  { label: 'Tin tức', to: '/news/news' },
   { label: 'Liên hệ', to: '/contact' }
 ]
 

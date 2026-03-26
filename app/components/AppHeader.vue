@@ -9,8 +9,8 @@ interface NavItem {
 const navItems: NavItem[] = [
   { id: 1, label: 'Trang chủ', url: '/' },
   { id: 2, label: 'Giới thiệu', url: '/about' },
-  { id: 3, label: 'Sản phẩm', url: '/products' },
-  { id: 4, label: 'Tin tức', url: '/news' },
+  { id: 3, label: 'Sản phẩm', url: '/products/products' },
+  { id: 4, label: 'Tin tức', url: '/news/news' },
   { id: 5, label: 'Liên hệ', url: '/contact' }
 ]
 
