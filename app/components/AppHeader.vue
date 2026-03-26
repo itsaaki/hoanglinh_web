@@ -22,7 +22,7 @@ const navItems: NavItem[] = [
     <UContainer>
       <div class="navbar__inner">
         
-        <NuxtLink to="/home" class="navbar__logo">
+        <NuxtLink to="/" class="navbar__logo">
           <img 
             src="/assets/images/logo.png" 
             alt="Hoàng Linh Logo" 
