@@ -12,7 +12,8 @@ const products = [
     <div class="container">
       <div class="section-header">
         <h2>Các sản phẩm chủ lực</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Chúng tôi cung cấp đa dạng nguyên liệu thức ăn chăn nuôi chất lượng cao, nguồn cung ổn định, 
+          đáp ứng nhu cầu sản xuất quy mô lớn của các nhà máy tại miền Bắc.</p>
       </div>
 
       <div class="product-grid">

@@ -25,9 +25,9 @@ const handleSubmit = () => {
         </h2>
 
         <div class="contact-info">
-          <p>Số XXX - Đường XXXX - Quận XXXXX - Thành Phố XXXXX</p>
-          <p>Email: <a href="mailto:hoanglinh@hoanglinh.com.vn">hoanglinh@hoanglinh.com.vn</a></p>
-          <p>Số điện thoại: <span class="phone">090 123 456</span></p>
+          <p>Trụ sở văn phòng: Vịnh thiên đường 1-99 VHOCP3 Nghĩa Trụ, Văn Giang, Hưng Yên</p>
+          <p>Email: <a href="mailto:info@hoanglinhdvkdns.com">info@hoanglinhdvkdns.com</a></p>
+          <p>Số điện thoại: <span class="phone">089 984 6338</span></p>
         </div>
 
         <div class="map-wrapper">

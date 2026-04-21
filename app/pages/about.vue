@@ -16,29 +16,32 @@ useHead({
 
     <div class="main-container">
       
-      <section class="values-section">
+       <section class="values-section">
         <div class="values-grid">
           
           <div class="value-col">
             <h3>Tầm nhìn</h3>
             <p>
-              Trở thành đơn vị hàng đầu trong lĩnh vực cung cấp nguyên liệu thức ăn chăn nuôi tại Việt Nam. Xây dựng hệ sinh thái nông nghiệp bền vững.
+              Trở thành nhà cung cấp nguyên liệu thức ăn chăn nuôi đứng đầu ngành, 
+              được khách hàng tin tưởng lựa chọn vì sự tử tế, chuyên nghiệp và khác biệt.
             </p>
           </div>
 
           <div class="value-col">
             <h3>Sứ mệnh</h3>
             <p>
-              Cung cấp các sản phẩm chất lượng cao, an toàn và hiệu quả kinh tế. Đồng hành cùng nhà nông làm giàu, góp phần phát triển nền nông nghiệp.
+            Hoàng Linh cung cấp nguyên liệu chất lượng và ổn định cho ngành thức ăn chăn nuôi, 
+            lấy lợi ích khách hàng làm trung tâm; phát triển bằng sự chủ động – trách nhiệm – bản lĩnh.
+
             </p>
           </div>
-
           <div class="value-col">
             <h3>Giá trị cốt lõi</h3>
             <p>
-              <strong>Uy tín:</strong> Luôn đặt chữ tín lên hàng đầu.<br>
-              <strong>Chất lượng:</strong> Cam kết sản phẩm tốt nhất.<br>
-              <strong>Tận tâm:</strong> Phục vụ khách hàng bằng cả trái tim.
+              <strong>TỬ TẾ</strong> trong từng hành động.<br>
+              <strong>TRÁCH NHIỆM</strong> trong từng quyết định.<br>
+              <strong>TRÍ TUỆ</strong>trong từng giải pháp.<br>
+              <strong>THẦN TỐC</strong> trong từng bước đi.
             </p>
           </div>
 
