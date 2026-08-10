@@ -1,7 +1,7 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
   // ... other configs
-  
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -11,5 +11,7 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+
+  modules: ['@nuxt/icon']
 })

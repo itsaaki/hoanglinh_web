@@ -8,7 +8,7 @@ const articleId = route.params.id
 
 // Dữ liệu bài viết giả lập (Bạn sẽ thay bằng gọi API thực tế sau này)
 const article = {
-  title: 'PROIN VITAE LIGULA RHONCUS, ALIQUET METUS SED, ACCUMSAN MI. VESTIBULUM IMPERDIET PORTTITOR BIBENDUM.',
+  title: 'Giới thiệu về công ty TNHH Dịch vụ Thương mại Nông sản Hoàng Linh',
   date: 'Thứ 6, 5/9/2025, 20:39 (GMT 7+)',
   lead: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan purus in lorem tristique ullamcorper vehicula condimentum ante. Duis convallis hendrerit nunc a accumsan. Suspendisse potenti. Phasellus eros nunc, venenatis nec facilisis sit amet, mattis a augue.',
   image: 'https://images.unsplash.com/photo-1484557985045-6f5c5e2a10f5?q=80&w=1000',
@@ -18,7 +18,7 @@ const article = {
     'Ut efficitur diam eget nunc ornare scelerisque. Donec porttitor commodo diam eget dictum. Pellentesque aliquet lectus eget elementum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent id vulputate mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
     'Vestibulum venenatis, nulla et iaculis mollis, lectus eros ultrices sem, sit amet lobortis diam lacus sit amet lectus. Donec lacinia sapien nec nulla iaculis eleifend sit amet ut turpis. Suspendisse id lectus eget velit gravida dictum sit amet quis ligula. Donec faucibus et orci a lobortis.'
   ],
-  author: 'Tên Tác Giả'
+  author: 'Dũng Nguyễn'
 }
 
 // Dữ liệu bài viết liên quan

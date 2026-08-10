@@ -8,7 +8,7 @@ const footerLinks = [
 ]
 
 const socialLinks = [
-  { icon: 'i-simple-icons-facebook', url: '#' },
+  { icon: 'i-simple-icons-facebook', url: '#',  },
   { icon: 'i-simple-icons-youtube', url: '#' },
   { icon: 'i-simple-icons-tiktok', url: '#' },
   { icon: 'i-heroicons-chat-bubble-left-ellipsis-solid', url: '#' } 
