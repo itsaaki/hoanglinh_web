@@ -13,14 +13,4 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.layout-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-content {
-  flex: 1; 
-}
-</style>
+<style lang="scss" scoped src="~/assets/scss/_default.scss"></style>
